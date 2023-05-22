@@ -1,0 +1,22 @@
+.hero{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: var(--light);
+    position: relative;
+    margin-top: -104px;
+}
+
+.hero_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+
+.hero_center>p{
+    margin: 2rem;
+    line-height: 1.5em;
+}

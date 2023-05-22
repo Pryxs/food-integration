@@ -1,0 +1,46 @@
+.contact{
+    margin-top: 6rem;
+}
+
+.contact>h2::first-letter{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.contact>h2, .contact>span{
+    display: block;
+    text-align: center;
+    margin: .5em;
+}
+
+.contact_grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+    position: relative;
+}
+
+form{
+    grid-column: 2 / 6;
+}
+
+.contact_grid>img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    top: 20%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 980px) {
+    form{
+        grid-column: 2 / 12;
+    }
+
+    .contact_grid>img{
+        display: none;
+    }
+}
